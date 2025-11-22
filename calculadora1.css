@@ -1,0 +1,69 @@
+/* Fondo general */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1e1e1e;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Caja principal */
+.calculadora {
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    width: 300px;
+}
+
+/* Pantalla */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #333;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+/* Contenedor de los botones */
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Botones */
+button {
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+/* Hover */
+button:hover {
+    background: #555;
+}
+
+/* Botón de igual */
+.equal-btn {
+    background: #ff9800;
+    color: black;
+    font-weight: bold;
+}
+
+.equal-btn:hover {
+    background: #e68a00;
+}
