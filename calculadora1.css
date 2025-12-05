@@ -9,6 +9,24 @@ body {
     margin: 0;
 }
 
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            height: 100vh;
+
+
+            background-image: url(https://i.pinimg.com/originals/14/0c/8d/140c8d8d674eac9e1a631d6c2a4a56fd.gif);
+            background-size: cover;                      
+            background-repeat: no-repeat;                
+            background-attachment: fixed;               
+            background-color: #333333;                  
+            margin: 0;
+            height: 100vh;
+        }
 /* Caja principal */
 .calculadora {
     background: #222;
@@ -67,3 +85,4 @@ button:hover {
 .equal-btn:hover {
     background: #e68a00;
 }
+
