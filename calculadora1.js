@@ -18,4 +18,12 @@ function calculate() {
     } catch (error) {
         display.value = "Error";
     }
+    function deleteChar() {
+        if (display.innerText.length === 1) {
+            display.innerText = "0";
+        } else {
+            display.innerText = display.innerText.slice(0, -1);
+        }
+    }
+
 }
