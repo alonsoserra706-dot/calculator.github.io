@@ -8,18 +8,6 @@ function clearDisplay() {
     document.getElementById("display").value = "";
 }
 
-function deleteChar() {
-    const display = document.getElementById("display");
-
-    // Si solo queda un carácter, reiniciar pantalla
-    if (display.innerText.length <= 1 || display.innerText === "0") {
-        display.innerText = "0";
-    } 
-    else {
-        // Borrar el último carácter
-        display.innerText = display.innerText.slice(0, -1);
-    }
-}
 
 
 // Calcular el resultado
@@ -34,5 +22,20 @@ function calculate() {
     }
 
 
+    function deleteChar() {
+    const display = document.getElementById("display");
+
+
+    if (display.innerText.length <= 1 || display.innerText === "0") {
+        display.innerText = "0";
+    } 
+    else {
+        
+        display.innerText = display.innerText.slice(0, -1);
+    }
 }
+
+
+}
+
 
