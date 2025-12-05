@@ -2,7 +2,6 @@
 function appendToDisplay(value) {
     const display = document.getElementById("display");
 
-    // Si el display contiene solo "0", reemplazar
     if (display.value === "0") {
         display.value = value;
     } else {
@@ -26,19 +25,19 @@ function deleteChar() {
     }
 }
 
-// Calcular el resultado
+// Calcular resultado
 function calculate() {
     const display = document.getElementById("display");
 
     try {
-        // Convertir x -> *
-        let operation = display.value.replace(/x/g, "*");
-
+        // Reemplaza las 'x' por '*'
+        const operation = display.value.replace(/x/g, '*');
         display.value = eval(operation);
     } catch {
         display.value = "Error";
     }
 }
+
 
 
 
